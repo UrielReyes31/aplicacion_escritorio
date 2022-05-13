@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrincipalController">
+   <children>
+      <AnchorPane layoutX="137.0" layoutY="66.0" prefHeight="333.0" prefWidth="598.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="66.0">
+         <children>
+            <SplitPane dividerPositions="0.29797979797979796" layoutX="199.0" layoutY="87.0" prefHeight="333.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+                     <children>
+                        <Button layoutX="1.0" layoutY="26.0" mnemonicParsing="false" onAction="#Registrar_usuario" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: #0B0B3B;" text="Registrar usuarios" textFill="WHITE" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="20.0" />
+                        <Button layoutX="1.0" layoutY="51.0" mnemonicParsing="false" onAction="#Mostrar_envios" style="-fx-background-color: #0B0B3B;" text="Mostrar Envios" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutY="76.0" mnemonicParsing="false" onAction="#Mostrar_uclient" prefHeight="25.0" prefWidth="173.0" style="-fx-background-color: #0B0B3B;" text="Datos Clientes" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="7.0" layoutY="101.0" mnemonicParsing="false" onAction="#Mostrar_Uper" style="-fx-background-color: #0B0B3B;" text="Datos Personal" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="1.0" layoutY="126.0" mnemonicParsing="false" onAction="#Mostrar_productos" style="-fx-background-color: #0B0B3B;" text="Mostrar porductos existentes" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="1.0" layoutY="151.0" mnemonicParsing="false" onAction="#Registrar_producto" style="-fx-background-color: #0B0B3B;" text="Registrar Producro" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="1.0" layoutY="176.0" mnemonicParsing="false" onAction="#mostrar_ventas" style="-fx-background-color: #0B0B3B;" text="Ventas" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="1.0" layoutY="201.0" mnemonicParsing="false" onAction="#MostEliminar_producto" style="-fx-background-color: #0B0B3B;" text="Eliminar producto" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Button layoutX="1.0" layoutY="226.0" mnemonicParsing="false" onAction="#MosActualizarProducto" style="-fx-background-color: #0B0B3B;" text="Actualizar Producto" textFill="WHITE" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+                        <Label layoutX="49.0" layoutY="6.0" prefHeight="23.0" prefWidth="125.0" text="MENU" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                           <font>
+                              <Font name="Century" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+                     <children>
+                        <AnchorPane fx:id="panel_registro" prefHeight="331.0" prefWidth="415.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextField fx:id="txt_nombre_R" layoutX="62.0" layoutY="14.0" />
+                              <TextField fx:id="txt_apellidoP_R" layoutX="62.0" layoutY="44.0" />
+                              <Label layoutX="31.0" layoutY="18.0" text="Nombre" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="13.0" layoutY="48.0" text="Apeliido P." textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="11.0" layoutY="77.0" text="Apellido M." textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="108.0" text="Edad" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="138.0" text="Telefono" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="166.0" text="Sexo" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="197.0" text="Correo" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="228.0" text="Calle" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <Label layoutX="31.0" layoutY="258.0" text="Numero" textFill="WHITE" AnchorPane.leftAnchor="1.0" />
+                              <TextField fx:id="txt_apellidoM_R" layoutX="62.0" layoutY="73.0" />
+                              <TextField fx:id="txt_edad_R" layoutX="62.0" layoutY="104.0" />
+                              <TextField fx:id="txt_tel_R" layoutX="62.0" layoutY="134.0" />
+                              <TextField fx:id="txt_sexo_R" layoutX="62.0" layoutY="162.0" />
+                              <TextField fx:id="txt_correo_R" layoutX="62.0" layoutY="193.0" />
+                              <TextField fx:id="txt_calle_R" layoutX="62.0" layoutY="224.0" />
+                              <TextField fx:id="txt_num_R" layoutX="62.0" layoutY="254.0" />
+                              <ComboBox fx:id="comboTipoUsuario" layoutX="229.0" layoutY="14.0" prefWidth="150.0" promptText="Tipo Usuario" />
+                              <ComboBox fx:id="comboColonia" layoutX="229.0" layoutY="53.0" prefWidth="150.0" promptText="Colonia" />
+                              <ComboBox fx:id="ComboCiudad" layoutX="229.0" layoutY="92.0" prefWidth="150.0" promptText="Ciudad" />
+                              <Button layoutX="357.0" layoutY="267.0" mnemonicParsing="false" onAction="#registrar_usuario" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #0B0B3B;" text="Guardar" textFill="#fff4f4" AnchorPane.bottomAnchor="39.0" AnchorPane.rightAnchor="68.0">
+                                 <font>
+                                    <Font name="Book Antiqua" size="19.0" />
+                                 </font></Button>
+                              <Label layoutX="1.0" layoutY="292.0" text="Codigo postal" textFill="WHITE" />
+                              <TextField fx:id="txt_Codigo_postal" layoutX="89.0" layoutY="288.0" />
+                              <TextField fx:id="txt_ocupacion" layoutX="332.0" layoutY="153.0" promptText="Personal" />
+                              <Label layoutX="264.0" layoutY="158.0" text="Ocupacion" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panel_envios" prefHeight="331.0" prefWidth="415.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="enviosTable" layoutX="90.0" layoutY="36.0" prefHeight="331.0" prefWidth="415.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="columna_id_envio" prefWidth="93.0" text="ID envio" />
+                                  <TableColumn fx:id="columna_precio_envio" prefWidth="68.0" text="Precio envio" />
+                                    <TableColumn fx:id="columna_fechaP_envio" prefWidth="90.0" text="Fecha pedido" />
+                                    <TableColumn fx:id="columna_fechaE_envio" prefWidth="94.0" text="Fecha entrega" />
+                                    <TableColumn fx:id="columna_idSer_envio" prefWidth="79.0" text="id servicio" />
+                                    <TableColumn fx:id="columna_idClien_envio" prefWidth="102.0" text="id cliente" />
+                                </columns>
+                              </TableView>
+                              <ScrollBar layoutX="399.0" orientation="VERTICAL" prefHeight="331.0" prefWidth="15.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="panel_Datos_cliente" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="table_Ucliente" layoutX="178.0" layoutY="49.0" prefHeight="331.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="colum_Nomclien" prefWidth="148.0" text="Nombre" />
+                                  <TableColumn fx:id="colum_edadcliet" prefWidth="76.0" text="Edad" />
+                                    <TableColumn fx:id="colum_sexclien" prefWidth="48.0" text="sexo" />
+                                    <TableColumn fx:id="colum_calleclien" prefWidth="90.0" text="Calle" />
+                                    <TableColumn fx:id="colum_colclien" prefWidth="104.0" text="colonia" />
+                                    <TableColumn fx:id="colum_ciudadclien" prefWidth="88.0" text="ciudad" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panel_UPersonal" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="table_Uper" prefHeight="331.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                    <TableColumn fx:id="colum_NomPer" prefWidth="63.0" text="Nombre" />
+                                  <TableColumn fx:id="colum_edadPer" prefWidth="67.0" text="edad" />
+                                  <TableColumn fx:id="colum_sexPer" prefWidth="35.0" text="sexo" />
+                                    <TableColumn fx:id="colum_empPer" prefWidth="93.0" text="Tipo Empleado" />
+                                    <TableColumn fx:id="colum_callePer" prefWidth="63.0" text="Calle" />
+                                    <TableColumn fx:id="colum_colPer" prefWidth="75.0" text="colonia" />
+                                    <TableColumn fx:id="colum_ciudadPer" minWidth="0.0" prefWidth="77.0" text="ciudad" />
+                                    <TableColumn fx:id="colum_idPer" prefWidth="127.0" text="ID personal" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="panel_MProductos" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="Tabla_Productos" prefHeight="331.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="colum_idProd" prefWidth="75.0" text="Id producro" />
+                                  <TableColumn fx:id="colum_nomProd" prefWidth="116.0" text="Nombre" />
+                                    <TableColumn fx:id="colum_precioProd" prefWidth="62.0" text="Precio" />
+                                    <TableColumn fx:id="colum_modeloProd" prefWidth="130.0" text="Modelo" />
+                                    <TableColumn fx:id="colum_marcaProd" prefWidth="79.0" text="Marca" />
+                                    <TableColumn fx:id="colum_cateProd" prefWidth="89.0" text="Categoria" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="panel_ventas" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="tabla_ventas" layoutX="154.0" layoutY="32.0" prefHeight="331.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                    <TableColumn fx:id="columna_Vidclient" prefWidth="75.0" text="id cliente" />
+                                  <TableColumn fx:id="columna_VNombreC" prefWidth="75.0" text="Nombre" />
+                                  <TableColumn fx:id="columna_VFV" prefWidth="89.0" text="fecha venta" />
+                                    <TableColumn fx:id="columna_VNomProd" prefWidth="91.0" text="nombre producto" />
+                                    <TableColumn fx:id="columna_VNomCat" minWidth="0.0" prefWidth="109.0" text="Nombre categoria" />
+                                    <TableColumn fx:id="columna_VNomMarc" prefWidth="67.0" text="nombre marca" />
+                                    <TableColumn fx:id="columna_VMetodoP" minWidth="8.0" prefWidth="49.0" text="metodo pago" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Panel_registrarProducto" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="24.0" layoutY="26.0" text="Nombre Producto" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="63.0" text="Modelo" textFill="WHITE" />
+                              <Label layoutX="24.0" layoutY="99.0" text="Precio" textFill="WHITE" />
+                              <Button layoutX="377.0" layoutY="258.0" mnemonicParsing="false" onAction="#Guardar_producto" style="-fx-background-color: #0B0B3B;" text="Guardar" textFill="#fffefe">
+                                 <font>
+                                    <Font name="Book Antiqua" size="19.0" />
+                                 </font>
+                              </Button>
+                              <ComboBox fx:id="combo_marca" layoutX="24.0" layoutY="153.0" prefWidth="150.0" promptText="Marca" />
+                              <ComboBox fx:id="combo_categoria" layoutX="24.0" layoutY="215.0" prefWidth="150.0" promptText="Categoria" />
+                              <TextField fx:id="txt_nombreProducto" layoutX="129.0" layoutY="22.0" />
+                              <TextField fx:id="txt_modeloproducto" layoutX="129.0" layoutY="59.0" />
+                              <TextField fx:id="txt_precioProducto" layoutX="129.0" layoutY="95.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panel_welcome" prefHeight="331.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="111.0" layoutY="131.0" prefHeight="69.0" prefWidth="432.0" text="WELCOME" textFill="WHITE">
+                                 <font>
+                                    <Font name="Eras Bold ITC" size="57.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panel_eliminarProducto" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="55.0" text="ID del producto a eliminar" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="320.0" layoutY="204.0" mnemonicParsing="false" onAction="#Eliminar_idproducto" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #0B0B3B;" text="Eliminar" textFill="#f2f2f2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Button>
+                              <TextField fx:id="txt_IDproductoEliminar" layoutX="254.0" layoutY="52.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panel_actualizarProd" prefHeight="331.0" prefWidth="556.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextField fx:id="txt_idProductoActualizar" layoutX="240.0" layoutY="34.0" />
+                              <TextField fx:id="txt_nuevo_precio" layoutX="240.0" layoutY="86.0" />
+                              <Button layoutX="314.0" layoutY="209.0" mnemonicParsing="false" onAction="#boton_Actualizar" prefHeight="39.0" prefWidth="108.0" style="-fx-background-color: #0B0B3B;" text="ACTUALIZAR" textFill="WHITE" />
+                              <Label layoutX="20.0" layoutY="38.0" text="ID del producto a actualizar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="87.0" text="Nuevo Precio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="38.0" prefWidth="561.0" text="Tienda Electrodomesticos" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font></Label>
+      <ImageView fitHeight="64.0" fitWidth="112.0" layoutX="400.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="88.0">
+         <image>
+            <Image url="@logo2.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+   </children>
+</AnchorPane>
